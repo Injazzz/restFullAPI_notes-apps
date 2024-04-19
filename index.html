@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes apps</title>
+    <link rel="icon" href="./src/icon/sticky-notes.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap" 
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/style/style.css">
+</head>
+<body>
+    <header>
+        <page-header></page-header> 
+    </header>
+
+    <div class="popup-box">
+        <div class="popup show">
+            <div class="content">
+                <header>
+                    <p>Add a new note</p>
+                    <i class="fa-solid fa-xmark"></i>
+                </header>
+                <form action="#">
+                    <div class="row title">
+                        <label>Title</label>
+                        <input type="text" id="title">
+                    </div>
+                    <div class="row description">
+                        <label for="">Description</label>
+                       <textarea name="" id=""></textarea>
+                    </div>
+                    <button class="add-note">Add Note</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="wrapper">
+            <add-box></add-box>
+            <notes-box></notes-box>
+        </div>
+    </main>
+
+    <footer>
+        <page-footer></page-footer>
+    </footer>    
+</body>
+<script src="components/page-header.js"></script>
+<script src="components/page-footer.js"></script>
+<script type="module" src="components/custom-notes.js"></script>
+<script type="module" src="index.js"></script>
+<script src="https://kit.fontawesome.com/c8bf250107.js" crossorigin="anonymous"></script>
+</html>
